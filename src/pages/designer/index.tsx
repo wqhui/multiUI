@@ -218,8 +218,10 @@ const Designer = () => {
       <View className='saved-section'>
         <Text className='section-title'>当前保存的数据:</Text>
         {savedJsonData ? (
-          <ScrollView scrollY className='json-display'>
-            <Text className='json-text'>{formatJson(savedJsonData)}</Text>
+          <ScrollView scrollY className='current-content-list'>
+            <View className='current-content'>
+              <Text className='json-text'>{formatJson(savedJsonData)}</Text>
+            </View>
           </ScrollView>
         ) : (
           <View className='empty-state'>
