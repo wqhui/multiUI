@@ -1,0 +1,40 @@
+.index {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+
+  .nav-bar {
+    flex-shrink: 0;
+    background: white;
+    padding: 20rpx 32rpx;
+    display: flex;
+    gap: 20rpx;
+    box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    .nav-btn {
+      flex: 1;
+      background-color: #f0f0f0;
+      color: #666;
+      border-radius: 8rpx;
+      font-size: 28rpx;
+      font-weight: 600;
+      border: 1px solid transparent;
+      margin-top: 0;
+
+      &.active {
+        border-color: #007aff;
+        color: #007aff;
+      }
+    }
+  }
+
+  .content {
+    display: flex;
+    flex:1
+  }
+
+}

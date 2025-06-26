@@ -1,0 +1,38 @@
+.custom-button {
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  transition: all 0.3s ease;
+  &&[type="default"]{
+      color: #000;
+      background-color: #f8f8f8;
+  }
+}
+
+.custom-button--block {
+  width: 100%;
+  display: block;
+}
+
+.custom-button--round {
+  border-radius: 50px;
+}
+
+.custom-button--circle {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+}
+
+.custom-button--shadow {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.custom-button:hover {
+  opacity: 0.8;
+}
+
+.custom-button:active {
+  transform: scale(0.98);
+}
